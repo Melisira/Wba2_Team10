@@ -1,0 +1,32 @@
+var fs = require('fs');
+var chalk = require('chalk');
+
+fs.readFile('personen.json', function (err, inhalt){
+    if (err){
+        console.log(err);
+        
+        
+        
+        
+        
+    }else{
+        var datei = JSON.parse(inhalt);
+        datei.wolkenkratzer.sort(function(a,b){
+            returna.hoehe-b.hoehe
+        });
+        datei.wolkenkratzerAusgabe(obj.name,obj.stadt, obj.hoehe);
+        console.log("====");
+    });
+    
+    var speichern= JSON.stringify(datei.wolkenkratzer);
+    fs.writeFile('wolkenkratzer_sortiert.json', speichern);
+}
+ });
+
+function wolkenkratzerAusgabe(name, stadt, hoehe){
+console.log("Name: " + chalk.blue(name));
+console.log("Stadt: " + chalk.green(stadt));
+console.log("Höhe: " + chalk.red(hoehe));
+}
+    
+    
